@@ -1,0 +1,120 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://www.roc21.com/wp-content/uploads/2012/09/fondos-para-pa%CC%81ginas-web-2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilos para los títulos */
+h1 {
+    font-size: 28px;
+    margin: 0 0 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+/* Estilos para los campos de entrada de texto */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: calc(100% - 24px);
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #0078d4;
+}
+
+/* Estilos para los botones */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0078d4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005ea2;
+}
+
+/* Estilos para la lista de tareas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilos para los botones de acción en cada tarea */
+.completeBtn, .editBtn, .deleteBtn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.completeBtn:hover, .editBtn:hover, .deleteBtn:hover {
+    background-color: #005ea2;
+    color: white;
+}
+
+/* Estilos para las tareas completadas */
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Estilos para los filtros de tareas */
+#taskControls {
+    margin-top: 20px;
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+    color: #c82333;
+    margin-top: 5px;
+}

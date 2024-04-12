@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="./css/Proyecto.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="task-item">
+            <h1>Lista de Tareas</h1>
+            <input type="text" class="task-text" placeholder="Agregar Nueva Tarea">
+            <label for="startDate">Fecha y Hora de Inicio:</label>
+            <input type="text" id="startDate" class="date-input" placeholder="Seleccione Fecha y Hora de Inicio">
+            <label for="endDate">Fecha y Hora de Fin:</label>
+            <input type="text" id="endDate" class="date-input" placeholder="Seleccione Fecha y Hora de Fin">
+                        <button class="add-task-btn btn">Agregar Tarea</button>
+        </div>
+            
+        <ul id="taskList"></ul>
+        <div id="taskControls">
+<button id="filterAll" class="btn">Todas</button>
+<button id="filterActive" class="btn">Activas</button>
+<button id="filterCompleted" class="btn">Completadas</button>
+
+        </div>
+    </div>
+    <script src="./js/Proyecto.js"></script>
+</body>
+</html>
